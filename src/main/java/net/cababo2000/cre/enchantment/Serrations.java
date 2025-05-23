@@ -22,16 +22,16 @@ public class Serrations extends Enchantment {
         if(!pAttacker.level().isClientSide() && pTarget instanceof LivingEntity livingentity) {
 
             if(pLevel == 1) {
-                    livingentity.addEffect(new MobEffectInstance(ModEffects.BLEEDING.get(), 60, 1));
-                    livingentity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 100, 1));
+                    livingentity.addEffect(new MobEffectInstance(ModEffects.BLEEDING.get(), 25, 1));
+                    livingentity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 80, 1));
             }
             if(pLevel == 2) {
-                    livingentity.addEffect(new MobEffectInstance(ModEffects.BLEEDING.get(), 80, 2));
-                    livingentity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 160, 2));
+                    livingentity.addEffect(new MobEffectInstance(ModEffects.BLEEDING.get(), 45, 2));
+                    livingentity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 100, 2));
             }
             if(pLevel == 3) {
-                    livingentity.addEffect(new MobEffectInstance(ModEffects.BLEEDING.get(), 100, 3));
-                    livingentity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 200, 3));
+                    livingentity.addEffect(new MobEffectInstance(ModEffects.BLEEDING.get(), 65, 3));
+                    livingentity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 120, 3));
             }
         }
 
