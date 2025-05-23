@@ -1,6 +1,8 @@
 package net.cababo2000.cre;
 
 import com.mojang.logging.LogUtils;
+import net.cababo2000.cre.effect.ModEffects;
+import net.cababo2000.cre.enchantment.ModEnchantments;
 import net.cababo2000.cre.item.ModCreativeTabs;
 import net.cababo2000.cre.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -29,6 +31,8 @@ public class c_r_e
     {
         ModItems.register(context.getModEventBus());
         ModCreativeTabs.register(context.getModEventBus());
+        ModEnchantments.register(context.getModEventBus());
+        ModEffects.register();
 
         IEventBus modEventBus = context.getModEventBus();
 
@@ -46,7 +50,6 @@ public class c_r_e
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.STARITE);
         }
     }
 

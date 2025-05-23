@@ -1,5 +1,10 @@
 {
   "item.cre.starite": "Starite",
 
-  "creativetab.cre_ingredients": "C&RE Ingredients"
+  "creativetab.cre_ingredients": "C&RE Ingredients",
+
+  "effect.cre.bleeding": "Bleeding",
+
+  "enchantment.cre.serrations": "Serrations",
+  "enchantment.cre.serrations.desc": "Inflicts the Bleeding and Hunger effects, inflicting true DOT onto the target."
 }
