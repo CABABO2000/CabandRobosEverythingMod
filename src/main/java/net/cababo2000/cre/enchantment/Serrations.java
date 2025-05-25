@@ -9,6 +9,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TridentItem;
+import net.minecraft.world.item.enchantment.DamageEnchantment;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentCategory;
 
@@ -23,20 +24,25 @@ public class Serrations extends Enchantment {
 
             if(pLevel == 1) {
                     livingentity.addEffect(new MobEffectInstance(ModEffects.BLEEDING.get(), 25, 1));
-                    livingentity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 80, 1));
+                    livingentity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 35, 1));
             }
             if(pLevel == 2) {
                     livingentity.addEffect(new MobEffectInstance(ModEffects.BLEEDING.get(), 45, 2));
-                    livingentity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 100, 2));
+                    livingentity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 65, 2));
             }
             if(pLevel == 3) {
                     livingentity.addEffect(new MobEffectInstance(ModEffects.BLEEDING.get(), 65, 3));
-                    livingentity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 120, 3));
+                    livingentity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 85, 3));
             }
         }
 
         super.doPostAttack(pAttacker, pTarget, pLevel);
 
+    }
+
+    @Override
+    public boolean checkCompatibility(Enchantment pEnch) {
+        return !(pEnch instanceof DamageEnchantment);
     }
 
     @Override

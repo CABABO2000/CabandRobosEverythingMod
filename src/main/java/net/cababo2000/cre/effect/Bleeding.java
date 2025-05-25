@@ -1,6 +1,8 @@
 // Bleeding.java
 package net.cababo2000.cre.effect;
 
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -9,7 +11,10 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageType;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
+
+import java.util.Random;
 
 public class Bleeding extends MobEffect {
     private static final ResourceKey<DamageType> OUT_OF_WORLD_KEY =
@@ -38,7 +43,7 @@ public class Bleeding extends MobEffect {
     @Override
     public boolean isDurationEffectTick(int duration, int amplifier) {
         // Apply every 20 ticks (1 second)
-        return duration % 30 == 0;
+        return duration % 10 == 0;
     }
 }
 
