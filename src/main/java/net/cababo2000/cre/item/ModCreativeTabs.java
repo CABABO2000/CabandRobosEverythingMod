@@ -21,6 +21,17 @@ public class ModCreativeTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.STARITE.get());
                         pOutput.accept(ModItems.ENDCOR.get());
+                        pOutput.accept(ModItems.WOODEN_GRIP.get());
+
+
+                    })
+                    .build());
+    public static final RegistryObject<CreativeModeTab> CRE_FOODS = CREATIVE_MODE_TABS.register("cre_foods",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.STARITE.get()))
+                    .title(Component.translatable("creativetab.cre_food"))
+                    .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModItems.CHOCOLATE_BAR.get());
+
 
 
                     })
