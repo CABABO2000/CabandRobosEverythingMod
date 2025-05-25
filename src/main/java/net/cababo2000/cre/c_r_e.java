@@ -1,6 +1,7 @@
 package net.cababo2000.cre;
 
 import com.mojang.logging.LogUtils;
+import net.cababo2000.cre.block.ModBlocks;
 import net.cababo2000.cre.effect.ModEffects;
 import net.cababo2000.cre.enchantment.ModEnchantments;
 import net.cababo2000.cre.item.ModCreativeTabs;
@@ -30,6 +31,7 @@ public class c_r_e
     public c_r_e(FMLJavaModLoadingContext context)
     {
         ModItems.register(context.getModEventBus());
+        ModBlocks.register(context.getModEventBus());
         ModCreativeTabs.register(context.getModEventBus());
         ModEnchantments.register(context.getModEventBus());
         ModEffects.register();

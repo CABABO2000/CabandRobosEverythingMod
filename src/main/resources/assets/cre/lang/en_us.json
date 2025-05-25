@@ -2,7 +2,10 @@
   "item.cre.starite": "Starite",
   "item.cre.endcor": "Endcor",
 
+  "block.cre.starite_ore": "Starite Ore",
+
   "creativetab.cre_ingredients": "CRE Ingredients",
+  "creativetab.cre_blocks": "CRE Blocks",
 
   "effect.cre.bleeding": "Bleeding",
 
