@@ -18,7 +18,7 @@ public class ModItems {
     public static final RegistryObject<Item> WOODEN_GRIP = ITEMS.register("wooden_grip",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CHOCOLATE_BAR = ITEMS.register("chocolate_bar",
-            () -> new Item(new Item.Properties().food(Fooditems.CHOCOLATE_BAR)));
+            () -> new Item(new Item.Properties().food(ModFooditems.CHOCOLATE_BAR)));
 
     public static void register(IEventBus eventbus) {
         ITEMS.register(eventbus);
