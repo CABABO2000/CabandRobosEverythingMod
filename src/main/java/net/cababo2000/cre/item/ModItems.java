@@ -13,6 +13,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> STARITE = ITEMS.register("starite",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ENDCOR = ITEMS.register("endcor",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventbus) {
         ITEMS.register(eventbus);

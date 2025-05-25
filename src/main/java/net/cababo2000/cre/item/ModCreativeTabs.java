@@ -18,6 +18,7 @@ public class ModCreativeTabs {
                     .title(Component.translatable("creativetab.cre_ingredients"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.STARITE.get());
+                        pOutput.accept(ModItems.ENDCOR.get());
 
 
                     })
