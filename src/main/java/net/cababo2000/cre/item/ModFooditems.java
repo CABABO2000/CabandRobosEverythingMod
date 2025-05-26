@@ -14,7 +14,7 @@ public class ModFooditems {
                     () -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 2), 0.99f
             )
             .effect(
-                    () -> new MobEffectInstance(MobEffects.HUNGER, 100, 1), 0.20f
+                    () -> new MobEffectInstance(MobEffects.HUNGER, 260, 4), 0.20f
             )
             .build();
     public static final FoodProperties PIZZA = new FoodProperties.Builder()
