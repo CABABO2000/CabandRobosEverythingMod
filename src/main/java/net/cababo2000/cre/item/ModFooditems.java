@@ -17,5 +17,17 @@ public class ModFooditems {
                     () -> new MobEffectInstance(MobEffects.HUNGER, 100, 1), 0.20f
             )
             .build();
+    public static final FoodProperties PIZZA = new FoodProperties.Builder()
+            .nutrition(10)
+            .saturationMod(1f)
+            .effect(
+                    () -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 3), 0.8f
+            )
+            .effect(
+                    () -> new MobEffectInstance(MobEffects.REGENERATION, 100, 0), 1f
+            )
+
+
+            .build();
 
 }

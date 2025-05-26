@@ -20,6 +20,7 @@ public class ModCreativeTabs {
                     .title(Component.translatable("creativetab.cre_foods"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.CHOCOLATE_BAR.get());
+                        pOutput.accept(ModItems.PIZZA.get());
 
 
 
