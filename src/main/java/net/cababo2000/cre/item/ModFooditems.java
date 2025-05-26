@@ -13,6 +13,9 @@ public class ModFooditems {
             .effect(
                     () -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 2), 0.99f
             )
+            .effect(
+                    () -> new MobEffectInstance(MobEffects.HUNGER, 100, 1), 0.20f
+            )
             .build();
 
 }
